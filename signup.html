@@ -1,0 +1,190 @@
+<html>
+<head>
+<title> USER SIGNUP </title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(bus1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Century Gothic;
+}
+
+.signupbox{
+    width: 500px;
+    height: 550px;
+    background: rgba(0,0,0,0.87);
+    color: #fff;
+    border-radius: 5%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: content-box;
+    padding: 80px 80px;
+}
+
+h1{
+        font-family: Century Gothic;
+        letter-spacing: 0.2em;
+        word-spacing: 0.1em;
+        font-size: 4em;
+        font-weight: 10000;
+        font-style: bold;
+        text-transform: uppercase;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+    }
+
+
+
+h1{ color: white ;
+    margin: -50;
+    padding: 0 0 60px;
+    text-align: center;
+    font-size: 22px;    
+}
+
+.signupbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+}
+.signupbox input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signupbox input[type="text"],input[type="password"],input[type="first name"],input[type="last"],input[type="address"],input[type="phonenumber"],input[type="email"], input[type="city"]
+{   
+    border: none;
+    border-bottom: 0.5px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+}
+.signupbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #6e0e77;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: Century Gothic;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+}
+
+.signupbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ec2ec3;
+    color: blanchedalmond;
+    
+}
+
+.signupbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+td{
+    color:white;
+}
+.signupbox a:hover
+{
+    color: #fff;transition: all 0.15s ease-in;
+}
+.radio {
+    width: 20px;
+    position: relative;
+}
+.radio label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px white, 3px 3px 9px rgba(0,0,0,0.5);
+    border: 1px solid black;
+}
+.radio label:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 6px solid black;
+    border-radius: 50px;
+    opacity: 0;
+    }
+.radio label:hover::after {
+    opacity: 0.3;
+    }
+.radio input[type=radio] {
+    visibility: hidden;
+}
+.radio input[type=radio]:checked + label:after {
+     opacity: 1;
+    }  
+</style>
+<body>
+<div class="signupbox">
+        <h1>SIGNUP</h1>
+        <form action= "signup.php" method="POST">
+            <p>FIRST NAME:</p>
+            <input type="first name" name="firstname" placeholder="Enter First Name" required="First Name">
+            
+            <p>LAST NAME:</p>
+            <input type=last  name="lastname" placeholder="Enter Last Name" required="Last Name">
+            
+            <p>PASSWORD:</p>
+            <input type="password" name="password" placeholder="Password" required="Password">
+
+             <p>PHONE NUMBER:</p>
+            <input type="phonenumber" name="phonenumber" placeholder="Enter Your Contact Number" required="Phone Number">
+
+            <p>EMAIL:</p>
+            <input type="email" name="email" placeholder="Enter Your Email" required="Email">
+            
+            <p>ADDRESS:</p>
+            <input type="address" name="address" placeholder="ADDRESS" required="Address">
+
+            <p>CITY:</p>
+            <input type="city" name="city" placeholder="CITY" required="City">
+
+            
+                <div class="radio">
+                <input type="radio" value="student" name='customer_type' id='Student' />
+                <label for="Student">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student</label>
+                
+            </div>
+            <div class="radio">
+                <input type="radio" value="Admin" name='customer_type' id='Admin' style="margin-left" />
+                <label for="Admin">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Admin</label>
+                </div>
+                
+                <!-- <div class="right">Admin</div> -->
+                <br>
+            
+            <input type="submit" value="Signup" name="Submit">
+            <a href="index.html">Already have an account?</a><br>
+        </form>
+    </div>
+</body>
+</head>
+</html>
