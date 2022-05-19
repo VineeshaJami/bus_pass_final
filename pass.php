@@ -143,11 +143,7 @@ echo "</table>";
    <th> **roll no is incorrect** </th>
  </tr>
 </table>"; 
-echo "
-        
 
-        <a class='btn btn-primary' href='pass info.html' role='button'>View Pass</a>
-        <a class='btn btn-primary' href='dashboard.html' role='button'>Dashboard</a>";
 }
 echo "
         
